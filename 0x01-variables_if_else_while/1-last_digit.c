@@ -5,15 +5,16 @@
  * main - assign a random number to the variable n each time it is executed
  * print the last digit of the number stored in the variable n
  * Rturn: Always 0 (success)
- */int main(void)
+ */
+int main(void)
 {
         int n;
         int num;
 
         srand(time(0));
-        n = r<F5>and() - RAND_MAX / 2;
+        n = rand() - RAND_MAX / 2;
 
-        print("Last digit of %d is ", n);
+        printf("Last digit of %d is ", n);
         num = n %10;
         if (num > 5)
         {
