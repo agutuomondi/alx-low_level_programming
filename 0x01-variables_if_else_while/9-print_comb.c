@@ -1,14 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - print all posible combination of single gigit numbers.
+ *  main - prints all possible combinations of single-digit numbers.
  *
- * return: 0(success)
+ * return: 0 on success
  */
+
 int main(void)
 
 {
 	int i = '0';
+
 	while (i <= '9')
 	{
 		putchar(i);
@@ -20,5 +22,6 @@ int main(void)
 		++i;
 	}
 	putchar('\n');
+
 	return (0);
 }
