@@ -18,18 +18,18 @@ char *_strdup(char *str)
 		return (NULL);
 		b = 0;
 	}
-	while (str[c] != '\0')
+	while (str[b] != '\0')
 	{
-		c++;
-		a = malloc(sizeof(char) * (c + 1));
+		b++;
+		a = malloc(sizeof(char) * (b + 1));
 	}
 	if (a == NULL)
 	{
 		return (NULL);
 	}
-	while ((a[b] = str[b]) != '\0')
+	for (c = 0; str[c]; c++)
 	{
-		b++;
+		a[c] = str[c];
 	}
 	return (a);
 }
