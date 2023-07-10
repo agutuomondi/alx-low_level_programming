@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	int n, m, k = 0;
+	int n, m, add = 0;
 
 	for (n = 1; n < argc; n++)
 	{
@@ -24,9 +24,9 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		k += atoi(argv[n]);
+		add += atoi(argv[n]);
 	}
-	printf("%d\n", k);
+	printf("%d\n", add);
 	return (0);
 }
 
