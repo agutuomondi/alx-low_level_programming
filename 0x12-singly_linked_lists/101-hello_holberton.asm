@@ -1,5 +1,5 @@
 global	main
-	external	printf
+	extern	printf
 main:
 
 	mov	edi,	format
@@ -7,4 +7,4 @@ main:
 	call	printf
 	mov	eax, 0
 	ret
-format: db	`hello, holberton\n`,0
+format: db	`Hello, Holberton\n`,0
