@@ -22,7 +22,8 @@ int create_file(const char *filename, char *text_content)
 	if (fd == -1)
 		return (-1);
 
-	text_content = "";
+	if (!text_content)
+		text_content = "";
 
 	for (nwletters = 0; text_content[nwletters]; nwletters++)
 		;
