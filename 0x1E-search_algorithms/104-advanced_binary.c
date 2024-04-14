@@ -5,7 +5,7 @@
  * @array: Pointer to first element of [sub]array to search in
  * @low: Lower bound of search range
  * @high: Upper bound of search range
- * @value: Value to search 
+ * @value: Value to search
  * Return: Index where value is located, or -1 if not present
  */
 int advanced_binary_recursive(int *array, size_t low, size_t high, int value)
